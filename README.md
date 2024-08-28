@@ -2,7 +2,7 @@
 
 ## Sumário
 
-Este projeto é uma aplicação web desenvolvida em Flask que permite o cadastro e visualização de informações sobre pets. A aplicação utiliza SQLite como banco de dados e é servida usando Gunicorn.
+Este projeto é uma aplicação web desenvolvida em Flask que permite o cadastro e visualização de informações sobre pets. A aplicação utiliza SQLite como banco de dados e é servida usando Gunicorn, proporcionando uma interface amigável para o usuário.
 
 ## Funcionalidades
 
@@ -12,25 +12,25 @@ Este projeto é uma aplicação web desenvolvida em Flask que permite o cadastro
 
 ## Tecnologias Utilizadas
 
-- Python
-- Flask
-- SQLite
-- Gunicorn
-- Bootstrap
+- **Python**: Linguagem de programação principal.
+- **Flask**: Framework web leve e flexível.
+- **SQLite**: Banco de dados simples e eficiente para armazenar os dados dos pets.
+- **Gunicorn**: Servidor WSGI para executar aplicações Flask em produção.
+- **Bootstrap**: Framework CSS para estilização e layout responsivo.
 
 ## Como Usar
 
 ### Requisitos
 
 - Python 3.8 ou superior
-- pip
+- pip (gerenciador de pacotes do Python)
 
 ### Instalação
 
 1. Clone o repositório:
 
     ```bash
-    git clone https://github.com/SeuUsuario/projeto-final-ada.git
+    git clone https://github.com/PedroPrebeck/projeto-final-ada.git
     cd projeto-final-ada
     ```
 
@@ -60,6 +60,10 @@ Este projeto é uma aplicação web desenvolvida em Flask que permite o cadastro
 ### Deploy para Produção
 
 O projeto usa GitHub Actions para deploy automático no EC2. Consulte o arquivo `deploy.yml` para detalhes de configuração.
+
+## Demonstração
+
+Confira a demo da aplicação em funcionamento: [Acesse a Demo](http://ec2-3-83-50-112.compute-1.amazonaws.com:5000/)
 
 ## Contribuindo
 
