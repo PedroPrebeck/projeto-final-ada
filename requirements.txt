@@ -1,3 +1,5 @@
 pytest
 flask
 gunicorn
+flake8
+black
