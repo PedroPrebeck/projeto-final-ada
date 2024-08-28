@@ -8,13 +8,13 @@ Este projeto é uma aplicação web desenvolvida em Flask que permite o cadastro
 
 Veja abaixo algumas capturas de tela da aplicação em funcionamento:
 
-![Tela Inicial](docs/assets/tela_inicial.png)
+![Tela Inicial](docs/assets/home.png)
 
-![Formulário de Cadastro](docs/assets/formulario_cadastro.png)
+![Formulário de Cadastro](docs/assets/form.png)
 
 Ou assista a um GIF da aplicação em ação:
 
-![Demonstração](docs/assets/demo.gif)
+![Demonstração](docs/assets/gif.gif)
 
 ## Arquitetura de Implantação
 
