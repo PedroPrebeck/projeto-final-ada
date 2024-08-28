@@ -4,6 +4,18 @@
 
 Este projeto é uma aplicação web desenvolvida em Flask que permite o cadastro e visualização de informações sobre pets. A aplicação utiliza SQLite como banco de dados e é servida usando Gunicorn, proporcionando uma interface amigável para o usuário.
 
+## Demonstração Visual
+
+Veja abaixo algumas capturas de tela da aplicação em funcionamento:
+
+![Tela Inicial](docs/assets/tela_inicial.png)
+
+![Formulário de Cadastro](docs/assets/formulario_cadastro.png)
+
+Ou assista a um GIF da aplicação em ação:
+
+![Demonstração](docs/assets/demo.gif)
+
 ## Funcionalidades
 
 - Adicionar novos pets com nome, idade e peso.
