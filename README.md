@@ -16,6 +16,13 @@ Ou assista a um GIF da aplicação em ação:
 
 ![Demonstração](docs/assets/demo.gif)
 
+## Arquitetura de Implantação
+
+Abaixo está o diagrama da arquitetura do projeto, mostrando o fluxo desde o desenvolvimento até a implantação:
+
+![Arquitetura de Implantação](docs/assets/arquitetura.jpg)
+
+
 ## Funcionalidades
 
 - Adicionar novos pets com nome, idade e peso.
