@@ -40,7 +40,7 @@ jobs:
         chmod 600 /tmp/ec2-key.pem
         ssh -i /tmp/ec2-key.pem -o StrictHostKeyChecking=no ec2-user@${{ secrets.STAGE_EC2_IP }} << EOF
           cd /home/ec2-user/app
-          source myenv/bin/activate
+          source /home/ec2-user/myenv/bin/activate
           git pull origin stage
           pkill -f app.py
           nohup python3 app.py &
@@ -79,7 +79,7 @@ jobs:
           chmod 600 /tmp/ec2-key.pem
           ssh -i /tmp/ec2-key.pem -o StrictHostKeyChecking=no ec2-user@${{ secrets.EC2_IP }} << EOF
             cd /home/ec2-user/app
-            source myenv/bin/activate
+            source /home/ec2-user/myenv/bin/activate
             git pull origin main
             pkill -f app.py
             nohup python3 app.py &
