@@ -45,7 +45,7 @@ jobs:
           git pull origin stage
           source /home/ec2-user/myenv/bin/activate
           pip install -r requirements.txt
-          pkill -f gunicorn || true
+          fuser -k 5000/tcp || true
           nohup gunicorn --bind 0.0.0.0:5000 app:app &
         EOF
 
@@ -85,6 +85,6 @@ jobs:
             git pull origin main
             source /home/ec2-user/myenv/bin/activate
             pip install -r requirements.txt
-            pkill -f gunicorn || true
+            fuser -k 5000/tcp || true
             nohup gunicorn --bind 0.0.0.0:5000 app:app &
           EOF
