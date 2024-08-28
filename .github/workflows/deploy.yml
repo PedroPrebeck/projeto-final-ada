@@ -46,7 +46,7 @@ jobs:
           source /home/ec2-user/myenv/bin/activate
           pip install -r requirements.txt
           fuser -k 5000/tcp || true
-          nohup gunicorn --bind 0.0.0.0:5000 app:app &
+          nohup gunicorn --bind 0.0.0.0:5000 app:app > gunicorn.log 2>&1 &
         EOF
 
   deploy-to-production:
@@ -86,5 +86,5 @@ jobs:
             source /home/ec2-user/myenv/bin/activate
             pip install -r requirements.txt
             fuser -k 5000/tcp || true
-            nohup gunicorn --bind 0.0.0.0:5000 app:app &
+            nohup gunicorn --bind 0.0.0.0:5000 app:app > gunicorn.log 2>&1 &
           EOF
