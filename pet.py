@@ -1,7 +1,7 @@
 import sqlite3
 
 def create_connection():
-  conn = sqlite3.connect('pets.db')
+  conn = sqlite3.connect('pets.db', check_same_thread=False)
   return conn
 
 def create_table(conn):
@@ -20,6 +20,16 @@ def insert_pet(conn, nome, idade, peso):
     conn.commit()
   except sqlite3.Error as e:
     print(f"Error inserting pet: {e}")
+    
+def fetch_all_pets(conn):
+    try:
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM pets")
+        pets = cursor.fetchall()
+        return pets
+    except sqlite3.Error as e:
+        print(f"Error fetching pets: {e}")
+        return []
 
 def coletar_nome_pet():
   nome = input("Nome do pet: ")
